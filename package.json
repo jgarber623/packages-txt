@@ -1,0 +1,36 @@
+{
+  "name": "packages-txt",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Export installed Atom packages to a TXT file.",
+  "keywords": [
+    "installation",
+    "packages",
+    "synchronization"
+  ],
+  "homepage": "https://github.com/jgarber623/packages-txt",
+  "bugs": {
+    "url": "https://github.com/jgarber623/packages-txt/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jason Garber",
+    "email": "jason@sixtwothree.org",
+    "url": "https://sixtwothree.org"
+  },
+  "repository": "https://github.com/jgarber623/packages-txt",
+  "engines": {
+    "atom": ">=1.30.0 <2.0.0"
+  },
+  "scripts": {
+    "test": "$(npm bin)/npm-run-all test:*",
+    "test:lint": "$(npm bin)/eslint ."
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "npm-run-all": "^4.1.3"
+  }
+}

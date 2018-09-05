@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "packages-txt",
+          "submenu": [
+            {
+              "label": "Export Installed Packages",
+              "command": "packages-txt:export-installed-packages"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
