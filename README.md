@@ -36,7 +36,7 @@ By default, packages-txt will export a file named `packages.txt` to the `.atom` 
 
 ### Using `packages.txt`
 
-After exporting installed packages to a file (e.g. `~/.atom/packages.txt`), you may bulk install Atom packages by running the following command:
+After exporting installed packages to a file (e.g. `/home/jason/.atom/packages.txt`), you may bulk install Atom packages by running the following command:
 
 ```sh
 apm install --packages-file ~/.atom/packages.txt
