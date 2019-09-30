@@ -23,8 +23,8 @@
     "atom": ">=1.30.0 <2.0.0"
   },
   "scripts": {
-    "test": "$(npm bin)/npm-run-all test:*",
-    "test:lint": "$(npm bin)/eslint ."
+    "test": "npx npm-run-all --print-label test:*",
+    "test:lint": "npx eslint --color ."
   },
   "dependencies": {
     "mkdirp": "^0.5.1"
