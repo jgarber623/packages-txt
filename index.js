@@ -1,10 +1,11 @@
 'use babel';
 
-import { CompositeDisposable } from 'atom';
-import fs from 'fs';
 import mkdirp from 'mkdirp';
-import { EOL } from 'os';
 import path from 'path';
+
+import { CompositeDisposable } from 'atom';
+import { writeFileSync } from 'fs';
+import { EOL } from 'os';
 
 export default {
   config: {
@@ -21,7 +22,7 @@ export default {
     this.subscriptions = new CompositeDisposable();
 
     this.subscriptions.add(atom.commands.add('atom-workspace', {
-      'packages-txt:export-installed-packages': () => this.exportInstalledPackages()
+      'packages-txt:export-installed-packages': () => this.exportUserPackages()
     }));
   },
 
@@ -29,14 +30,12 @@ export default {
     this.subscriptions.dispose();
   },
 
-  exportInstalledPackages() {
+  exportUserPackages() {
     const exportedFilePath = atom.config.get('packages-txt.exportedFilePath');
-    const installedPackages = atom.packages.getAvailablePackageNames().filter(packageName => !atom.packages.isBundledPackage(packageName));
+    const userPackages = atom.packages.getAvailablePackages().filter(pkg => !pkg.isBundled);
 
-    // Recursively create output folder structure...
     mkdirp.sync(path.dirname(exportedFilePath));
 
-    // Write packages file...
-    fs.writeFileSync(exportedFilePath, `${installedPackages.join(EOL)}${EOL}`);
+    writeFileSync(exportedFilePath, `${userPackages.join(EOL)}${EOL}`);
   }
 };
