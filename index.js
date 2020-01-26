@@ -32,7 +32,7 @@ export default {
 
   exportUserPackages() {
     const exportedFilePath = atom.config.get('packages-txt.exportedFilePath');
-    const userPackages = atom.packages.getAvailablePackages().filter(pkg => !pkg.isBundled);
+    const userPackages = atom.packages.getAvailablePackages().filter(pkg => !pkg.isBundled).map(pkg => pkg.name);
 
     mkdirp.sync(path.dirname(exportedFilePath));
 
