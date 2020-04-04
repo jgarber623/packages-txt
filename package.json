@@ -26,7 +26,7 @@
     "test": "npx eslint --color ."
   },
   "dependencies": {
-    "mkdirp": "^1.0.3"
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
