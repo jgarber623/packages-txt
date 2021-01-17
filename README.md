@@ -2,9 +2,8 @@
 
 **Export installed Atom packages to a TXT file.**
 
-[![APM](https://img.shields.io/apm/v/packages-txt.svg?style=for-the-badge)](https://atom.io/packages/packages-txt)
-[![Downloads](https://img.shields.io/apm/dm/packages-txt.svg?style=for-the-badge)](https://atom.io/packages/packages-txt)
-[![Dependencies](https://img.shields.io/depfu/jgarber623/packages-txt.svg?style=for-the-badge)](https://depfu.com/github/jgarber623/packages-txt)
+[![APM](https://img.shields.io/apm/v/packages-txt.svg?logo=atom&style=for-the-badge)](https://atom.io/packages/packages-txt)
+[![Downloads](https://img.shields.io/apm/dm/packages-txt.svg?logo=atom&style=for-the-badge)](https://atom.io/packages/packages-txt)
 
 ## Installation
 

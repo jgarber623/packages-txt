@@ -1,6 +1,6 @@
 {
-  "private": true,
   "name": "packages-txt",
+  "private": true,
   "version": "0.2.2",
   "description": "Export installed Atom packages to a TXT file.",
   "keywords": [
@@ -18,12 +18,15 @@
     "email": "jason@sixtwothree.org",
     "url": "https://sixtwothree.org"
   },
-  "repository": "https://github.com/jgarber623/packages-txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgarber623/packages-txt"
+  },
   "engines": {
     "atom": ">=1.30.0 <2.0.0"
   },
   "scripts": {
-    "test": "npx eslint --color ."
+    "test": "eslint ."
   },
   "dependencies": {
     "mkdirp": "^1.0.4"
