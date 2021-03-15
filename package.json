@@ -32,6 +32,6 @@
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
-    "eslint": "^7.21.0"
+    "eslint": "^7.22.0"
   }
 }
