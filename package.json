@@ -9,19 +9,10 @@
     "synchronization"
   ],
   "homepage": "https://github.com/jgarber623/packages-txt",
-  "bugs": {
-    "url": "https://github.com/jgarber623/packages-txt/issues"
-  },
+  "bugs": "https://github.com/jgarber623/packages-txt/issues",
   "license": "MIT",
-  "author": {
-    "name": "Jason Garber",
-    "email": "jason@sixtwothree.org",
-    "url": "https://sixtwothree.org"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jgarber623/packages-txt"
-  },
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "repository": "github:jgarber623/packages-txt",
   "engines": {
     "atom": ">=1.30.0 <2.0.0"
   },
