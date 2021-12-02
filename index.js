@@ -1,10 +1,9 @@
 'use babel';
 
-import mkdirp from 'mkdirp';
 import path from 'path';
 
 import { CompositeDisposable } from 'atom';
-import { writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync } from 'fs';
 import { EOL } from 'os';
 
 export default {
@@ -34,7 +33,7 @@ export default {
     const exportedFilePath = atom.config.get('packages-txt.exportedFilePath');
     const userPackages = atom.packages.getAvailablePackages().filter(pkg => !pkg.isBundled).map(pkg => pkg.name);
 
-    mkdirp.sync(path.dirname(exportedFilePath));
+    mkdirSync(path.dirname(exportedFilePath), { recursive: true });
 
     writeFileSync(exportedFilePath, `${userPackages.join(EOL)}${EOL}`);
   }
