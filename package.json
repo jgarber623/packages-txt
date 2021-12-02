@@ -1,7 +1,7 @@
 {
   "name": "packages-txt",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Export installed Atom packages to a TXT file.",
   "keywords": [
     "installation",
