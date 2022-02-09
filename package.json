@@ -20,6 +20,6 @@
     "test": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^8.6.0"
+    "eslint": "^7.32.0"
   }
 }
